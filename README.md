@@ -10,9 +10,9 @@ The dataset, containing CSV files, serves as the foundation for our analysis. Ou
 
 We orchestrated a Spark ML Pipeline for our analysis, structured in the following stages:
 
-- **Stages 1-2**: Transformation of each categorical column through `StringIndexer` and `OneHotEncoder`.
-- **Stage 3**: Consolidation of all numerical columns and the output from `OneHotEncoder` into a unified feature vector via `VectorAssembler`.
-- **Stage 4**: Implementation of a `Random Forest Classifier` as the concluding stage, tuned with specific hyperparameters.
+- **Stages 1-2**: Transformation of each categorical column through StringIndexer and OneHotEncoder.
+- **Stage 3**: Consolidation of all numerical columns and the output from OneHotEncoder into a unified feature vector via VectorAssembler.
+- **Stage 4**: Implementation of a Random Forest Classifier as the concluding stage, tuned with specific hyperparameters.
 
 ### Random Forest Classifier Configuration
 - **Number of Trees**: 150
