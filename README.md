@@ -8,7 +8,7 @@ The dataset, containing CSV files, serves as the foundation for our analysis. Ou
 - Categorical Features: `proto`
 - Numerical Features: `dur`, `spkts`, `dpkts`, `sbytes`, `dbytes`, `rate`, `sttl`, `dttl`, `sload`, `dload`, `sloss`, `dloss`, `sinpkt`, `dinpkt`, `sjit`, `djit`, `swin`, `stcpb`, `dtcpb`, `dwin`, `tcprtt`, `synack`, `ackdat`, `smean`, `dmean`, `trans_depth`, `response_body_len`, `ct_srv_src`, `ct_state_ttl`, `ct_dst_ltm`, `ct_src_dport_ltm`, `ct_dst_sport_ltm`, `ct_dst_src_ltm`, `is_ftp_login`, `ct_ftp_cmd`, `ct_flw_http_mthd`, `ct_src_ltm`, `ct_srv_dst`, `is_sm_ips_ports`
 
-We orchestrated a Spark ML Pipeline for our analysis, structured in the following stages:
+I orchestrated a Spark ML Pipeline for our analysis, structured in the following stages:
 
 - **Stages 1-2**: Transformation of each categorical column through StringIndexer and OneHotEncoder.
 - **Stage 3**: Consolidation of all numerical columns and the output from OneHotEncoder into a unified feature vector via VectorAssembler.
